@@ -1,64 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo landing page with two column layout</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  Features
-  Team
-  Sign In
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.svg" alt="Fylo logo" class="logo logo--header" />
 
-  All your files in one secure location, accessible anywhere.
+      <nav>
+        <ul>
+          <li>Features</li>
+          <li>Team</li>
+          <li>Sign In</li>
+        </ul>
+      </nav>
+    </header>
 
-  Fylo stores your most important files in one secure location. 
-  Access them wherever you need, share and collaborate with friends, 
-  family, and co-workers.
+    <main>
+      <section class="page__hero">
+        <img
+          class="page__illustration page__illustration--1"
+          src="images/illustration-1.svg"
+          alt="Managing files"
+        />
 
-  Get Started
+        <h1>All your files in one secure location, accessible anywhere.</h1>
 
-  Stay productive, wherever you are
+        <p class="paragraph paragraph--hero">
+          Fylo stores your most important files in one secure location. Access
+          them wherever you need, share and collaborate with friends, family,
+          and co-workers.
+        </p>
 
-  Never let location be an issue when accessing your files. Fylo has you 
-  covered for all of your file storage needs.
+        <form class="form form--hero" aria-label="Enter your email">
+          <div class="form-group">
+            <label for="page__email--hero">Email</label>
+            <input
+              id="page__email--hero"
+              class="page__email--hero"
+              type="text"
+              name="email"
+              placeholder="Enter your email..."
+            />
+          </div>
 
-  Securely share files and folders with friends, family and colleagues for 
-  live collaboration. No email attachments required!
+          <div class="form-group">
+            <input
+              class="form-submit--hero"
+              type="submit"
+              value="Get Started"
+              role="button"
+            />
+          </div>
+        </form>
+      </section>
 
-  See how Fylo works
+      <section class="page__benefit">
+        <img
+          class="page__illustration page__illustration--2"
+          src="images/illustration-2.svg"
+          alt="Collaboration"
+        />
 
-  Fylo has improved our team productivity by an order of magnitude. Since 
-  making the switch our team has become a well-oiled collaboration machine.
+        <h2 class="subheading subheading--benefit">
+          Stay productive, wherever you are
+        </h2>
 
-  Kyle Burton
-  Founder & CEO, Huddle
+        <p class="paragraph paragraph--benefit">
+          Never let location be an issue when accessing your files. Fylo has you
+          covered for all of your file storage needs.
+        </p>
 
-  Get early access today
+        <p class="paragraph paragraph--benefit">
+          Securely share files and folders with friends, family and colleagues
+          for live collaboration. No email attachments required!
+        </p>
 
-  It only takes a minute to sign up and our free starter tier is extremely generous. 
-  If you have any questions, our support team would be happy to help you.
+        <a href="#">See how Fylo works</a>
 
-  Get Started For Free
+        <blockquote>
+          Fylo has improved our team productivity by an order of magnitude.
+          Since making the switch our team has become a well-oiled collaboration
+          machine.
 
-  Phone: +1-543-123-4567
-  example@fylo.com
+          <div class="page__testimonial">
+            <img src="images/avatar-testimonial.jpg" alt="Kyle Burton photo" />
+            Kyle Burton Founder & CEO, Huddle
+          </div>
+        </blockquote>
+      </section>
 
-  About Us
-  Jobs
-  Press
-  Blog
+      <section class="page__cta">
+        <h2 class="subheading subheading--cta">Get early access today</h2>
 
-  Contact Us
-  Terms
-  Privacy
+        <p class="paragraph paragraph--cta">
+          It only takes a minute to sign up and our free starter tier is
+          extremely generous. If you have any questions, our support team would
+          be happy to help you.
+        </p>
 
-</body>
+        <form class="form form--cta" aria-label="Enter your email">
+          <div class="form-group">
+            <label for="page__email--cta">Email</label>
+            <input
+              id="page__email--cta"
+              class="page__email--cta"
+              type="text"
+              name="email"
+              placeholder="email@example.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              class="form-submit--cta"
+              type="submit"
+              value="Get Started For Free"
+              role="button"
+            />
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <img src="images/logo.svg" alt="Fylo logo" class="logo logo--footer" />
+
+      <ul class="page__communication">
+        <li>Phone: +1-543-123-4567</li>
+        <li>example@fylo.com</li>
+      </ul>
+
+      <ul class="page__about">
+        <li>About Us</li>
+        <li>Jobs</li>
+        <li>Press</li>
+        <li>Blog</li>
+      </ul>
+
+      <ul class="page__contact">
+        <li>Contact Us</li>
+        <li>Terms</li>
+        <li>Privacy</li>
+      </ul>
+
+      <div class="page__icons">
+        <div class="page__icon-box">
+          <svg class="page__icon">
+            <use href="images/sprite.svg#icon-facebook"></use>
+          </svg>
+        </div>
+        <div class="page__icon-box">
+          <svg class="page__icon">
+            <use href="images/sprite.svg#icon-twitter"></use>
+          </svg>
+        </div>
+        <div class="page__icon-box">
+          <svg class="page__icon">
+            <use href="images/sprite.svg#icon-instagram"></use>
+          </svg>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
 
 <!-- Challenge by Frontend Mentor. Coded by Abhishek Sisodia. -->
