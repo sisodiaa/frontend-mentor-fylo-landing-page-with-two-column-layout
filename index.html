@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
-    <header>
+    <header class="wrapper">
       <img src="images/logo.svg" alt="Fylo logo" class="logo logo--header" />
 
       <nav>
@@ -27,7 +27,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="wrapper">
       <section class="page__hero">
         <img
           class="page__illustration page__illustration--1"
@@ -35,7 +35,9 @@
           alt="Managing files"
         />
 
-        <h1>All your files in one secure location, accessible anywhere.</h1>
+        <h1 class="heading heading--hero">
+          All your files in one secure location, accessible anywhere.
+        </h1>
 
         <p class="paragraph paragraph--hero">
           Fylo stores your most important files in one secure location. Access
@@ -47,8 +49,8 @@
           <div class="form-group">
             <label for="page__email--hero">Email</label>
             <input
-              id="page__email--hero"
-              class="page__email--hero"
+              id="email--hero"
+              class="email--hero"
               type="text"
               name="email"
               placeholder="Enter your email..."
@@ -57,7 +59,7 @@
 
           <div class="form-group">
             <input
-              class="form-submit--hero"
+              class="submit--hero"
               type="submit"
               value="Get Started"
               role="button"
@@ -114,8 +116,8 @@
           <div class="form-group">
             <label for="page__email--cta">Email</label>
             <input
-              id="page__email--cta"
-              class="page__email--cta"
+              id="email--cta"
+              class="email--cta"
               type="text"
               name="email"
               placeholder="email@example.com"

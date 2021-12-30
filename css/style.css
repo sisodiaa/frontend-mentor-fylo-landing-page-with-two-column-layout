@@ -1,1 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+:root {
+  --color-dark-blue: hsl(243, 87%, 12%);
+  --color-desaturated-blue: hsl(238, 22%, 44%);
+  --color-bright-blue: hsl(224, 93%, 58%);
+  --color-moderate-cyan: hsl(170, 45%, 43%);
+  --color-grayish-blue: hsl(240, 75%, 98%);
+  --color-light-gray: hsl(0, 0%, 75%);
+}
 
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/* Remove list styles on ul, ol */
+ul,
+ol {
+  list-style: none;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: var(--color-dark-blue);
+}
+
+h1,
+h2,
+nav,
+input[role=button] {
+  font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+nav,
+input[role=button] {
+  font-weight: 400;
+}
+
+nav {
+  font-size: 0.75rem;
+  letter-spacing: 0.01rem;
+}
+
+h1 {
+  letter-spacing: 0.03rem;
+}
+
+p {
+  font-size: 0.890625rem;
+}
+
+input[type=text],
+input[type=submit] {
+  font-size: 0.875rem;
+}
+
+input[type=submit] {
+  font-weight: 700;
+}
+
+input[type=text]::-webkit-input-placeholder {
+  font-size: 0.75rem;
+}
+
+.wrapper {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  margin-bottom: 6.125rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1.5rem;
+}
+
+.logo--header {
+  width: 5rem;
+  height: auto;
+}
+
+.heading--hero {
+  margin-bottom: 1.5rem;
+}
+
+.paragraph--hero {
+  margin-bottom: 2rem;
+  padding-left: 0.735rem;
+  padding-right: 0.735rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form div {
+  padding-left: 0.735rem;
+  padding-right: 0.735rem;
+}
+.form input {
+  width: 100%;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.25rem;
+  outline: none;
+}
+.form label {
+  display: none;
+}
+
+.email--hero {
+  margin-bottom: 1rem;
+  border: 1px solid var(--color-dark-blue);
+}
+.email--hero::-webkit-input-placeholder {
+  color: var(--color-light-gray);
+  opacity: 0.5;
+}
+
+.submit--hero {
+  color: var(--color-grayish-blue);
+  background-color: var(--color-bright-blue);
+  border: none;
+  box-shadow: 0px 2px 5px 1px var(--color-light-gray);
+}
+
+.page__hero {
+  text-align: center;
+}
+.page__illustration--1 {
+  margin-bottom: 2.5rem;
+  padding-left: 0.735rem;
+  padding-right: 0.735rem;
+}

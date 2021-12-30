@@ -1,0 +1,42 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  div {
+    padding-left: 0.735rem;
+    padding-right: 0.735rem;
+  }
+
+  input {
+    width: 100%;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.25rem;
+    outline: none;
+  }
+
+  label { display: none; }
+}
+
+.email {
+  &--hero {
+    margin-bottom: 1rem;
+    border: 1px solid var(--color-dark-blue);
+
+    &::-webkit-input-placeholder {
+      color: var(--color-light-gray);
+      opacity: 0.5;
+    }
+  }
+}
+
+.submit {
+  &--hero {
+    color: var(--color-grayish-blue);
+    background-color: var(--color-bright-blue);
+    border: none;
+    box-shadow: 0px 2px 5px 1px var(--color-light-gray);
+  }
+}
