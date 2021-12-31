@@ -1,9 +1,11 @@
 :root {
-  --color-dark-blue:        hsl(243, 87%, 12%);
-  --color-desaturated-blue: hsl(238, 22%, 44%);
-  --color-bright-blue:      hsl(224, 93%, 58%);
-  --color-moderate-cyan:    hsl(170, 45%, 43%);
-  --color-grayish-blue:     hsl(240, 75%, 98%);
-  --color-light-gray:       hsl(0, 0%, 75%);
-  --color-white:            hsl(0, 0%, 100%);
+  --color-dark-blue:                    hsl(243, 87%, 12%);
+  --color-desaturated-blue:             hsl(238, 22%, 44%);
+  --color-desaturated-blue-transparent: hsla(238, 22%, 44%, 0.7);
+  --color-bright-blue:                  hsl(224, 93%, 58%);
+  --color-moderate-cyan:                hsl(170, 45%, 43%);
+  --color-grayish-blue:                 hsl(240, 75%, 98%);
+  --color-grayish-blue-transparent:     hsla(240, 75%, 98%, 0.7);
+  --color-light-gray:                   hsl(0, 0%, 75%);
+  --color-white:                        hsl(0, 0%, 100%);
 }

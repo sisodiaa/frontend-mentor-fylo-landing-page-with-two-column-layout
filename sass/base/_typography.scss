@@ -67,10 +67,10 @@ blockquote {
   }
 }
 
-footer { color: var(--color-grayish-blue); }
+footer { color: var(--color-grayish-blue-transparent); }
 
 .paragraph {
-  &--benefit { color: var(--color-desaturated-blue); }
+  &--benefit { color: var(--color-desaturated-blue-transparent); }
 }
 
 .subheading {
@@ -80,6 +80,8 @@ footer { color: var(--color-grayish-blue); }
 .page__hero { text-align: center; }
 
 .page__cta {
-  color: var(--color-grayish-blue);
   text-align: center;
+
+  & h2 { color: var(--color-grayish-blue); }
+  & p { color: var(--color-grayish-blue-transparent); }
 }
