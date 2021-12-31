@@ -167,6 +167,19 @@ blockquote small {
   color: var(--color-desaturated-blue);
 }
 
+.subheading--cta {
+  letter-spacing: 0.05rem;
+}
+
+.page__hero {
+  text-align: center;
+}
+
+.page__cta {
+  color: var(--color-grayish-blue);
+  text-align: center;
+}
+
 .wrapper {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -199,6 +212,9 @@ nav ul {
   margin-bottom: 1.5rem;
   text-align: center;
 }
+.subheading--cta {
+  margin-bottom: 1rem;
+}
 
 .paragraph--hero {
   margin-bottom: 2rem;
@@ -209,6 +225,11 @@ nav ul {
   margin-left: -0.25rem;
   margin-right: -0.25rem;
   margin-bottom: 1rem;
+}
+.paragraph--cta {
+  margin-left: 1.277375rem;
+  margin-right: 1.277375rem;
+  margin-bottom: 1.5rem;
 }
 
 .form {
@@ -231,26 +252,35 @@ nav ul {
 .form label {
   display: none;
 }
+.form--cta {
+  width: 82.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-.email--hero {
+.email--hero, .email--cta {
   margin-bottom: 1rem;
   border: 1px solid var(--color-dark-blue);
 }
-.email--hero::-webkit-input-placeholder {
+.email--hero::-webkit-input-placeholder, .email--cta::-webkit-input-placeholder {
   color: var(--color-light-gray);
   opacity: 0.5;
 }
 
-.submit--hero {
+.submit--hero, .submit--cta {
   color: var(--color-grayish-blue);
   background-color: var(--color-bright-blue);
   border: none;
+}
+.submit--hero {
   box-shadow: 0px 2px 5px 1px var(--color-light-gray);
+}
+.submit--cta {
+  box-shadow: 0px 1px 15px -12px var(--color-dark-blue);
 }
 
 .page__hero {
   margin-bottom: 9rem;
-  text-align: center;
 }
 .page__illustration--1 {
   margin-bottom: 2.5rem;
@@ -343,4 +373,9 @@ nav ul {
   grid-row: 2/span 1;
   grid-column: 2/span 1;
   padding-top: 3px;
+}
+.page__cta {
+  padding-top: 3.25rem;
+  padding-bottom: 4rem;
+  background-color: var(--color-desaturated-blue);
 }

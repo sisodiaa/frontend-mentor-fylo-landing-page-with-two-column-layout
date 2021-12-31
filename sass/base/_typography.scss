@@ -68,7 +68,16 @@ blockquote {
 }
 
 .paragraph {
-  &--benefit {
-    color: var(--color-desaturated-blue);
-  }
+  &--benefit { color: var(--color-desaturated-blue); }
+}
+
+.subheading {
+  &--cta { letter-spacing: 0.05rem; }
+}
+
+.page__hero { text-align: center; }
+
+.page__cta {
+  color: var(--color-grayish-blue);
+  text-align: center;
 }

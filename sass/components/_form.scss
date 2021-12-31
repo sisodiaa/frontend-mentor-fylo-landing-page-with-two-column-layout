@@ -18,10 +18,17 @@
   }
 
   label { display: none; }
+
+  &--cta {
+    width: 82.5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .email {
-  &--hero {
+  &--hero,
+  &--cta {
     margin-bottom: 1rem;
     border: 1px solid var(--color-dark-blue);
 
@@ -33,10 +40,18 @@
 }
 
 .submit {
-  &--hero {
+  &--hero,
+  &--cta {
     color: var(--color-grayish-blue);
     background-color: var(--color-bright-blue);
     border: none;
+  }
+
+  &--hero {
     box-shadow: 0px 2px 5px 1px var(--color-light-gray);
+  }
+
+  &--cta {
+    box-shadow: 0px 1px 15px -12px var(--color-dark-blue);
   }
 }

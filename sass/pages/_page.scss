@@ -1,8 +1,5 @@
 .page {
-  &__hero {
-    margin-bottom: 9rem;
-    text-align: center;
-  }
+  &__hero { margin-bottom: 9rem; }
 
   &__illustration {
     &--1 {
@@ -109,5 +106,11 @@
       grid-column: 2 / span 1;
       padding-top: 3px;
     }
+  }
+
+  &__cta {
+    padding-top: 3.25rem;
+    padding-bottom: 4rem;
+    background-color: var(--color-desaturated-blue);
   }
 }
