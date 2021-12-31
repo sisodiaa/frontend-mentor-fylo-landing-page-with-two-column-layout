@@ -113,4 +113,66 @@
     padding-bottom: 4rem;
     background-color: var(--color-desaturated-blue);
   }
+
+  &__communication {
+    margin-bottom: 3.5rem;
+
+    & li {
+      &::before {
+        margin-right: 1rem;
+        display: inline-block;
+        content: "";
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        vertical-align: middle;
+      }
+
+      &:first-child::before {
+        height: 18px;
+        width: 18px;
+        background-image: url(../images/icon-phone.svg);
+      }
+
+      &:last-child::before {
+        height: 16px;
+        width: 20px;
+        background-image: url(../images/icon-email.svg);
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &__about,
+  &__contact {
+    margin-bottom: 3rem;
+
+    & > * + * {
+      margin-top: 1rem;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.75rem;
+  }
+
+  &__icon-box {
+    border: 1px solid var(--color-grayish-blue);
+    border-radius: 50%;
+    padding: 0.45rem;
+    cursor: pointer;
+  }
+
+  &__icon {
+    display: block;
+    margin: auto;
+    width: 0.7rem;
+    height: 0.7rem;
+    fill: var(--color-grayish-blue);
+  }
 }

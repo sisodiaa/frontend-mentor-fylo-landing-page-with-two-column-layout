@@ -163,6 +163,10 @@ blockquote small {
   font-size: 0.4rem;
 }
 
+footer {
+  color: var(--color-grayish-blue);
+}
+
 .paragraph--benefit {
   color: var(--color-desaturated-blue);
 }
@@ -199,9 +203,26 @@ nav ul {
   column-gap: 1.5rem;
 }
 
+footer {
+  padding: 4.25rem 2.5rem 3rem;
+  background-color: var(--color-dark-blue);
+}
+
 .logo--header {
   width: 5rem;
   height: auto;
+}
+.logo__mask {
+  margin-bottom: 2.5rem;
+  width: 11rem;
+  height: 3.25rem;
+  background-color: var(--color-white);
+  -webkit-mask-image: url(../images/logo.svg);
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-image: url(../images/logo.svg);
+  mask-size: contain;
+  mask-repeat: no-repeat;
 }
 
 .heading--hero {
@@ -378,4 +399,53 @@ nav ul {
   padding-top: 3.25rem;
   padding-bottom: 4rem;
   background-color: var(--color-desaturated-blue);
+}
+.page__communication {
+  margin-bottom: 3.5rem;
+}
+.page__communication li::before {
+  margin-right: 1rem;
+  display: inline-block;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  vertical-align: middle;
+}
+.page__communication li:first-child::before {
+  height: 18px;
+  width: 18px;
+  background-image: url(../images/icon-phone.svg);
+}
+.page__communication li:last-child::before {
+  height: 16px;
+  width: 20px;
+  background-image: url(../images/icon-email.svg);
+}
+.page__communication li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.page__about, .page__contact {
+  margin-bottom: 3rem;
+}
+.page__about > * + *, .page__contact > * + * {
+  margin-top: 1rem;
+}
+.page__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.75rem;
+}
+.page__icon-box {
+  border: 1px solid var(--color-grayish-blue);
+  border-radius: 50%;
+  padding: 0.45rem;
+  cursor: pointer;
+}
+.page__icon {
+  display: block;
+  margin: auto;
+  width: 0.7rem;
+  height: 0.7rem;
+  fill: var(--color-grayish-blue);
 }

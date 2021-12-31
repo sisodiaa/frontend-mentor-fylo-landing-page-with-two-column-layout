@@ -1,6 +1,21 @@
+@use "../abstracts/variables" as *;
+
 .logo {
   &--header {
     width: 5rem;
     height: auto;
+  }
+
+  &__mask {
+    margin-bottom: 2.5rem;
+    width: 11rem;
+    height: 3.25rem;
+    background-color: var(--color-white);
+    -webkit-mask-image: url(../images/logo.svg);
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-image: url(../images/logo.svg);
+    mask-size: contain;
+    mask-repeat: no-repeat;
   }
 }
