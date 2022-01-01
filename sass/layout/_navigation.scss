@@ -1,7 +1,11 @@
+@use "../abstracts/mixins" as *;
+
 nav {
   ul {
     display: flex;
     justify-content: space-between;
     column-gap: 1.5rem;
+
+    @include respond-to-desktop { column-gap: 2.3333rem; }
   }
 }

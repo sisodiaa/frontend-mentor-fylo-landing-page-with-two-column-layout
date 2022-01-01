@@ -94,6 +94,11 @@ ol {
 html {
   font-size: 100%;
 }
+@media only screen and (min-width: 55em) {
+  html {
+    font-size: 150%;
+  }
+}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -121,6 +126,11 @@ input[role=button] {
 nav {
   font-size: 0.75rem;
   letter-spacing: 0.01rem;
+}
+@media only screen and (min-width: 55em) {
+  nav {
+    font-size: 0.6667rem;
+  }
 }
 
 h1 {
@@ -195,6 +205,12 @@ footer {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+@media only screen and (min-width: 55em) {
+  .wrapper {
+    padding-left: 3.3333rem;
+    padding-right: 3.3333rem;
+  }
+}
 
 header {
   display: flex;
@@ -203,11 +219,21 @@ header {
   margin-top: 1.5rem;
   margin-bottom: 6.125rem;
 }
+@media only screen and (min-width: 55em) {
+  header {
+    margin-top: 2.6667rem;
+  }
+}
 
 nav ul {
   display: flex;
   justify-content: space-between;
   column-gap: 1.5rem;
+}
+@media only screen and (min-width: 55em) {
+  nav ul {
+    column-gap: 2.3333rem;
+  }
 }
 
 footer {
@@ -218,6 +244,11 @@ footer {
 .logo--header {
   width: 5rem;
   height: auto;
+}
+@media only screen and (min-width: 55em) {
+  .logo--header {
+    width: 7rem;
+  }
 }
 .logo__mask {
   margin-bottom: 2.5rem;
