@@ -1,5 +1,9 @@
+@use "../abstracts/mixins" as *;
+
 .heading {
   &--hero {
     margin-bottom: 1.5rem;
+
+    @include respond-to-desktop { margin-bottom: 0.75rem; }
   }
 }

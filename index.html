@@ -28,44 +28,48 @@
     </header>
 
     <main>
-      <section class="page__hero wrapper">
-        <img
-          class="page__illustration page__illustration--1"
-          src="images/illustration-1.svg"
-          alt="Managing files"
-        />
+      <section class="page__hero wrapper row reverse">
+        <div class="col col-bigger">
+          <img
+            class="page__illustration page__illustration--1"
+            src="images/illustration-1.svg"
+            alt="Managing files"
+          />
+        </div>
 
-        <h1 class="heading heading--hero">
-          All your files in one secure location, accessible anywhere.
-        </h1>
-
-        <p class="paragraph paragraph--hero">
-          Fylo stores your most important files in one secure location. Access
-          them wherever you need, share and collaborate with friends, family,
-          and co-workers.
-        </p>
-
-        <form class="form form--hero" aria-label="Enter your email">
-          <div class="form-group">
-            <label for="page__email--hero">Email</label>
-            <input
-              id="email--hero"
-              class="email--hero"
-              type="text"
-              name="email"
-              placeholder="Enter your email..."
-            />
-          </div>
-
-          <div class="form-group">
-            <input
-              class="submit--hero"
-              type="submit"
-              value="Get Started"
-              role="button"
-            />
-          </div>
-        </form>
+        <div class="col col-smaller margin-top-3">
+          <h1 class="heading heading--hero">
+            All your files in one secure location, accessible anywhere.
+          </h1>
+          
+          <p class="paragraph paragraph--hero">
+            Fylo stores your most important files in one secure location. Access
+            them wherever you need, share and collaborate with friends, family,
+            and co-workers.
+          </p>
+          
+          <form class="form form--hero" aria-label="Enter your email">
+            <div class="form-group">
+              <label for="page__email--hero">Email</label>
+              <input
+                id="email--hero"
+                class="email--hero"
+                type="text"
+                name="email"
+                placeholder="Enter your email..."
+              />
+            </div>
+          
+            <div class="form-group">
+              <input
+                class="submit--hero"
+                type="submit"
+                value="Get Started"
+                role="button"
+              />
+            </div>
+          </form>
+        </div>
       </section>
 
       <section class="page__benefit wrapper">

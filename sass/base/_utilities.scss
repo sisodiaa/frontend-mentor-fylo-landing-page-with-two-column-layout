@@ -3,9 +3,32 @@
 .wrapper {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
 
-  @include respond-to-desktop {
+.margin-top-3 { margin-top: 3rem; }
+
+@include respond-to-desktop {
+  .wrapper {
     padding-left: 3.3333rem;
     padding-right: 3.3333rem;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 1.65%;
+  }
+  
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  .col-smaller {
+    width: 46%;
+  }
+  
+  .col-bigger {
+    width: 52.35%;
   }
 }

@@ -1,10 +1,26 @@
+@use "../abstracts/mixins" as *;
+
 .form {
   display: flex;
   flex-direction: column;
+  
+  @include respond-to-desktop {
+    width: 90%;
+    flex-direction: row;
+    column-gap: 0.5rem;
+  }
 
   div {
     padding-left: 0.735rem;
     padding-right: 0.735rem;
+
+    @include respond-to-desktop {
+      padding-left: 0;
+      padding-right: 0;
+
+      &:first-child { flex: 3.15; }
+      &:last-child { flex: 1.85; }
+    }
   }
 
   input {
@@ -13,8 +29,13 @@
     padding-bottom: 0.625rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    border-radius: 0.25rem;
+    border-radius: 0.1rem;
     outline: none;
+
+    @include respond-to-desktop {
+      padding-top: 0.3rem;
+      padding-bottom: 0.3rem;
+    }
   }
 
   label { display: none; }
@@ -36,6 +57,10 @@
       color: var(--color-light-gray);
       opacity: 0.5;
     }
+
+    @include respond-to-desktop {
+      margin-bottom: 0rem;
+    }
   }
 }
 
@@ -49,6 +74,10 @@
 
   &--hero {
     box-shadow: 0px 2px 5px 1px var(--color-light-gray);
+
+    @include respond-to-desktop {
+      height: 100%;
+    }
   }
 
   &--cta {

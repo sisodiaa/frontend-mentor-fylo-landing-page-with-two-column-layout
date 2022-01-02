@@ -39,19 +39,44 @@ nav {
   @include respond-to-desktop { font-size: 0.6667rem; }
 }
 
-h1 { letter-spacing: 0.03rem; }
+h1 {
+  letter-spacing: 0.03rem;
+
+  @include respond-to-desktop {
+    font-size: 1.67rem;
+    letter-spacing: 0;
+  }
+}
+
 h2 { font-size: 1rem; }
 
-p { font-size: 0.890625rem; }
+p {
+  font-size: 0.890625rem;
+
+  @include respond-to-desktop {
+    font-size: 0.75rem;
+    line-height: 1.25;
+  }
+}
 
 input[type="text"],
 input[type="submit"] {
   font-size: 0.875rem;
+
+  @include respond-to-desktop {
+    font-size: 0.625rem;
+  }
 }
 
 input[type="submit"] { font-weight: 700; }
 
-input[type="text"]::-webkit-input-placeholder { font-size: 0.75rem; }
+input[type="text"]::-webkit-input-placeholder {
+  font-size: 0.75rem;
+
+  @include respond-to-desktop {
+    font-size: 0.625rem;
+  }
+}
 
 a {
   font-size: 0.75rem;
@@ -82,7 +107,13 @@ footer { color: var(--color-grayish-blue-transparent); }
   &--cta { letter-spacing: 0.05rem; }
 }
 
-.page__hero { text-align: center; }
+.page__hero {
+  text-align: center;
+
+  @include respond-to-desktop {
+    text-align: left;
+  }
+}
 
 .page__cta {
   text-align: center;

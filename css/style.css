@@ -136,6 +136,12 @@ nav {
 h1 {
   letter-spacing: 0.03rem;
 }
+@media only screen and (min-width: 55em) {
+  h1 {
+    font-size: 1.67rem;
+    letter-spacing: 0;
+  }
+}
 
 h2 {
   font-size: 1rem;
@@ -144,10 +150,22 @@ h2 {
 p {
   font-size: 0.890625rem;
 }
+@media only screen and (min-width: 55em) {
+  p {
+    font-size: 0.75rem;
+    line-height: 1.25;
+  }
+}
 
 input[type=text],
 input[type=submit] {
   font-size: 0.875rem;
+}
+@media only screen and (min-width: 55em) {
+  input[type=text],
+input[type=submit] {
+    font-size: 0.625rem;
+  }
 }
 
 input[type=submit] {
@@ -156,6 +174,11 @@ input[type=submit] {
 
 input[type=text]::-webkit-input-placeholder {
   font-size: 0.75rem;
+}
+@media only screen and (min-width: 55em) {
+  input[type=text]::-webkit-input-placeholder {
+    font-size: 0.625rem;
+  }
 }
 
 a {
@@ -190,6 +213,11 @@ footer {
 .page__hero {
   text-align: center;
 }
+@media only screen and (min-width: 55em) {
+  .page__hero {
+    text-align: left;
+  }
+}
 
 .page__cta {
   text-align: center;
@@ -205,13 +233,36 @@ footer {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+
+.margin-top-3 {
+  margin-top: 3rem;
+}
+
 @media only screen and (min-width: 55em) {
   .wrapper {
     padding-left: 3.3333rem;
     padding-right: 3.3333rem;
   }
-}
 
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 1.65%;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  .col-smaller {
+    width: 46%;
+  }
+
+  .col-bigger {
+    width: 52.35%;
+  }
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -222,6 +273,7 @@ header {
 @media only screen and (min-width: 55em) {
   header {
     margin-top: 2.6667rem;
+    margin-bottom: 4rem;
   }
 }
 
@@ -266,6 +318,11 @@ footer {
 .heading--hero {
   margin-bottom: 1.5rem;
 }
+@media only screen and (min-width: 55em) {
+  .heading--hero {
+    margin-bottom: 0.75rem;
+  }
+}
 
 .subheading--benefit {
   margin-bottom: 1.5rem;
@@ -279,6 +336,13 @@ footer {
   margin-bottom: 2rem;
   padding-left: 0.735rem;
   padding-right: 0.735rem;
+}
+@media only screen and (min-width: 55em) {
+  .paragraph--hero {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 1rem;
+  }
 }
 .paragraph--benefit {
   margin-left: -0.25rem;
@@ -295,9 +359,28 @@ footer {
   display: flex;
   flex-direction: column;
 }
+@media only screen and (min-width: 55em) {
+  .form {
+    width: 90%;
+    flex-direction: row;
+    column-gap: 0.5rem;
+  }
+}
 .form div {
   padding-left: 0.735rem;
   padding-right: 0.735rem;
+}
+@media only screen and (min-width: 55em) {
+  .form div {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .form div:first-child {
+    flex: 3.15;
+  }
+  .form div:last-child {
+    flex: 1.85;
+  }
 }
 .form input {
   width: 100%;
@@ -305,8 +388,14 @@ footer {
   padding-bottom: 0.625rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  border-radius: 0.25rem;
+  border-radius: 0.1rem;
   outline: none;
+}
+@media only screen and (min-width: 55em) {
+  .form input {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+  }
 }
 .form label {
   display: none;
@@ -325,6 +414,11 @@ footer {
   color: var(--color-light-gray);
   opacity: 0.5;
 }
+@media only screen and (min-width: 55em) {
+  .email--hero, .email--cta {
+    margin-bottom: 0rem;
+  }
+}
 
 .submit--hero, .submit--cta {
   color: var(--color-grayish-blue);
@@ -333,6 +427,11 @@ footer {
 }
 .submit--hero {
   box-shadow: 0px 2px 5px 1px var(--color-light-gray);
+}
+@media only screen and (min-width: 55em) {
+  .submit--hero {
+    height: 100%;
+  }
 }
 .submit--cta {
   box-shadow: 0px 1px 15px -12px var(--color-dark-blue);
