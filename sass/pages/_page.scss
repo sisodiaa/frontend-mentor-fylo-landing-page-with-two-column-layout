@@ -1,3 +1,5 @@
+@use "../abstracts/mixins" as *;
+
 .page {
   &__hero { margin-bottom: 9rem; }
 
@@ -21,6 +23,8 @@
     padding-bottom: 5rem;
     background-color: var(--color-grayish-blue);
 
+    @include respond-to-desktop { padding-bottom: 3rem; }
+
     &::before {
       position: absolute;
       content: "";
@@ -31,6 +35,12 @@
       background-image: url(../images/bg-curve-mobile.svg);
       background-repeat: no-repeat;
       background-size: 100% 100%;
+
+      @include respond-to-desktop {
+        top: -114px;
+        height: 114px;
+        background-image: url(../images/bg-curve-desktop.svg);
+      }
     }
 
     a {
@@ -51,10 +61,20 @@
         height: 16px;
         margin-left: 0.4rem;
         vertical-align: text-bottom;
+
+        @include respond-to-desktop {
+          vertical-align: middle;
+        }
       }
 
       &:hover {
         filter: brightness(130%);
+      }
+
+      @include respond-to-desktop {
+        margin: 0;
+        margin-bottom: 2rem;
+        padding-top: 0;
       }
     }
   }
@@ -78,6 +98,16 @@
       background-image: url(../images/icon-quotes.svg);
       background-repeat: no-repeat;
       background-size: 100% 100%;
+    }
+
+    @include respond-to-desktop {
+      width: 14rem;
+      margin: 0;
+      padding: 1.75rem 1.4rem 1rem;
+
+      &::before {
+        left: 1.4rem;
+      }
     }
   }
 
@@ -105,6 +135,10 @@
       grid-row: 2 / span 1;
       grid-column: 2 / span 1;
       padding-top: 3px;
+    }
+
+    @include respond-to-desktop {
+      margin-top: 0.75rem;
     }
   }
 

@@ -48,7 +48,13 @@ h1 {
   }
 }
 
-h2 { font-size: 1rem; }
+h2 {
+  font-size: 1rem;
+
+  @include respond-to-desktop {
+    font-size: 1.67rem;
+  }
+}
 
 p {
   font-size: 0.890625rem;
@@ -95,16 +101,35 @@ blockquote {
   small {
     font-size: 0.4rem;
   }
+
+  @include respond-to-desktop {
+    font-size: 0.5rem;
+    line-height: 1.75;
+  }
 }
 
 footer { color: var(--color-grayish-blue-transparent); }
 
 .paragraph {
-  &--benefit { color: var(--color-desaturated-blue-transparent); }
+  &--benefit {
+    color: var(--color-desaturated-blue-transparent);
+
+    @include respond-to-desktop {
+      color: var(--color-dark-blue);
+    }
+  }
 }
 
 .subheading {
   &--cta { letter-spacing: 0.05rem; }
+
+  &--benefit {
+    text-align: center;
+
+    @include respond-to-desktop {
+      text-align: left;
+    }
+  }
 }
 
 .page__hero {

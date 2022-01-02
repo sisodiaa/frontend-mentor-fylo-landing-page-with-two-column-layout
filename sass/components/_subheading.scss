@@ -1,7 +1,12 @@
+@use "../abstracts/mixins" as *;
+
 .subheading {
   &--benefit {
     margin-bottom: 1.5rem;
-    text-align: center;
+
+    @include respond-to-desktop {
+      margin-top: 3rem;
+    }
   }
 
   &--cta {

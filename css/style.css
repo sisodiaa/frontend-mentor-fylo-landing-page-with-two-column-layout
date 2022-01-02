@@ -146,6 +146,11 @@ h1 {
 h2 {
   font-size: 1rem;
 }
+@media only screen and (min-width: 55em) {
+  h2 {
+    font-size: 1.67rem;
+  }
+}
 
 p {
   font-size: 0.890625rem;
@@ -197,6 +202,12 @@ blockquote strong {
 blockquote small {
   font-size: 0.4rem;
 }
+@media only screen and (min-width: 55em) {
+  blockquote {
+    font-size: 0.5rem;
+    line-height: 1.75;
+  }
+}
 
 footer {
   color: var(--color-grayish-blue-transparent);
@@ -205,9 +216,22 @@ footer {
 .paragraph--benefit {
   color: var(--color-desaturated-blue-transparent);
 }
+@media only screen and (min-width: 55em) {
+  .paragraph--benefit {
+    color: var(--color-dark-blue);
+  }
+}
 
 .subheading--cta {
   letter-spacing: 0.05rem;
+}
+.subheading--benefit {
+  text-align: center;
+}
+@media only screen and (min-width: 55em) {
+  .subheading--benefit {
+    text-align: left;
+  }
 }
 
 .page__hero {
@@ -326,7 +350,11 @@ footer {
 
 .subheading--benefit {
   margin-bottom: 1.5rem;
-  text-align: center;
+}
+@media only screen and (min-width: 55em) {
+  .subheading--benefit {
+    margin-top: 3rem;
+  }
 }
 .subheading--cta {
   margin-bottom: 1rem;
@@ -348,6 +376,13 @@ footer {
   margin-left: -0.25rem;
   margin-right: -0.25rem;
   margin-bottom: 1rem;
+}
+@media only screen and (min-width: 55em) {
+  .paragraph--benefit {
+    width: 85%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 .paragraph--cta {
   margin-left: 1.277375rem;
@@ -456,6 +491,11 @@ footer {
   padding-bottom: 5rem;
   background-color: var(--color-grayish-blue);
 }
+@media only screen and (min-width: 55em) {
+  .page__benefit {
+    padding-bottom: 3rem;
+  }
+}
 .page__benefit::before {
   position: absolute;
   content: "";
@@ -466,6 +506,13 @@ footer {
   background-image: url(../images/bg-curve-mobile.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+@media only screen and (min-width: 55em) {
+  .page__benefit::before {
+    top: -114px;
+    height: 114px;
+    background-image: url(../images/bg-curve-desktop.svg);
+  }
 }
 .page__benefit a {
   display: block;
@@ -486,8 +533,20 @@ footer {
   margin-left: 0.4rem;
   vertical-align: text-bottom;
 }
+@media only screen and (min-width: 55em) {
+  .page__benefit a::after {
+    vertical-align: middle;
+  }
+}
 .page__benefit a:hover {
   filter: brightness(130%);
+}
+@media only screen and (min-width: 55em) {
+  .page__benefit a {
+    margin: 0;
+    margin-bottom: 2rem;
+    padding-top: 0;
+  }
 }
 .page__testimonial {
   position: relative;
@@ -508,6 +567,16 @@ footer {
   background-image: url(../images/icon-quotes.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+@media only screen and (min-width: 55em) {
+  .page__testimonial {
+    width: 14rem;
+    margin: 0;
+    padding: 1.75rem 1.4rem 1rem;
+  }
+  .page__testimonial::before {
+    left: 1.4rem;
+  }
 }
 .page__customer {
   display: grid;
@@ -531,6 +600,11 @@ footer {
   grid-row: 2/span 1;
   grid-column: 2/span 1;
   padding-top: 3px;
+}
+@media only screen and (min-width: 55em) {
+  .page__customer {
+    margin-top: 0.75rem;
+  }
 }
 .page__cta {
   padding-top: 3.25rem;

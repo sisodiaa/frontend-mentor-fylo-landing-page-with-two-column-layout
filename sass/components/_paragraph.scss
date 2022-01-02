@@ -17,6 +17,12 @@
     margin-left: -0.25rem;
     margin-right: -0.25rem;
     margin-bottom: 1rem;
+
+    @include respond-to-desktop {
+      width: 85%;
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 
   &--cta {
