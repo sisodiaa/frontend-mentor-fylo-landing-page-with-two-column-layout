@@ -22,5 +22,11 @@
     mask-image: url(../images/logo.svg);
     mask-size: contain;
     mask-repeat: no-repeat;
+
+    @include respond-to-desktop {
+      width: 6.9166rem;
+      height: 2.04166rem;
+      margin-bottom: 1rem;
+    }
   }
 }

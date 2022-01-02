@@ -1,4 +1,8 @@
+@use "../abstracts/mixins" as *;
+
 footer {
   padding: 4.25rem 2.5rem 3rem;
   background-color: var(--color-dark-blue);
+
+  @include respond-to-desktop { padding: 4.25rem 3.5rem 0rem; }
 }

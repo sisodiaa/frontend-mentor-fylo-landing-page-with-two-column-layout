@@ -327,6 +327,11 @@ footer {
   padding: 4.25rem 2.5rem 3rem;
   background-color: var(--color-dark-blue);
 }
+@media only screen and (min-width: 55em) {
+  footer {
+    padding: 4.25rem 3.5rem 0rem;
+  }
+}
 
 .logo--header {
   width: 5rem;
@@ -348,6 +353,13 @@ footer {
   mask-image: url(../images/logo.svg);
   mask-size: contain;
   mask-repeat: no-repeat;
+}
+@media only screen and (min-width: 55em) {
+  .logo__mask {
+    width: 6.9166rem;
+    height: 2.04166rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .heading--hero {
