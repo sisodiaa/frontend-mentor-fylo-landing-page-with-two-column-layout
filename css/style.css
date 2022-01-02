@@ -221,9 +221,20 @@ footer {
     color: var(--color-dark-blue);
   }
 }
+@media only screen and (min-width: 55em) {
+  .paragraph--cta {
+    text-align: left;
+  }
+}
 
 .subheading--cta {
   letter-spacing: 0.05rem;
+}
+@media only screen and (min-width: 55em) {
+  .subheading--cta {
+    text-align: left;
+    font-size: 1.5rem;
+  }
 }
 .subheading--benefit {
   text-align: center;
@@ -389,6 +400,13 @@ footer {
   margin-right: 1.277375rem;
   margin-bottom: 1.5rem;
 }
+@media only screen and (min-width: 55em) {
+  .paragraph--cta {
+    width: 82.5%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 
 .form {
   display: flex;
@@ -439,6 +457,14 @@ footer {
   width: 82.5%;
   margin-left: auto;
   margin-right: auto;
+  flex-direction: column;
+}
+.form--cta div:first-child, .form--cta div:last-child {
+  flex: 1;
+}
+.form--cta div:last-child {
+  margin-top: 0.5rem;
+  width: fit-content;
 }
 
 .email--hero, .email--cta {

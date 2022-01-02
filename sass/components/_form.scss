@@ -44,6 +44,17 @@
     width: 82.5%;
     margin-left: auto;
     margin-right: auto;
+    flex-direction: column;
+
+    & div:first-child,
+    & div:last-child {
+      flex: 1;
+    }
+
+    & div:last-child {
+      margin-top: 0.5rem;
+      width: fit-content;
+    }
   }
 }
 

@@ -118,26 +118,33 @@ footer { color: var(--color-grayish-blue-transparent); }
       color: var(--color-dark-blue);
     }
   }
+
+  &--cta {
+    @include respond-to-desktop { text-align: left; }
+  }
 }
 
 .subheading {
-  &--cta { letter-spacing: 0.05rem; }
+  &--cta {
+    letter-spacing: 0.05rem;
+
+    @include respond-to-desktop {
+      text-align: left;
+      font-size: 1.5rem;
+    }
+  }
 
   &--benefit {
     text-align: center;
 
-    @include respond-to-desktop {
-      text-align: left;
-    }
+    @include respond-to-desktop { text-align: left; }
   }
 }
 
 .page__hero {
   text-align: center;
 
-  @include respond-to-desktop {
-    text-align: left;
-  }
+  @include respond-to-desktop { text-align: left; }
 }
 
 .page__cta {

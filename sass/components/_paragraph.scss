@@ -29,5 +29,11 @@
     margin-left: 1.277375rem;
     margin-right: 1.277375rem;
     margin-bottom: 1.5rem;
+
+    @include respond-to-desktop {
+      width: 82.5%;
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 }
