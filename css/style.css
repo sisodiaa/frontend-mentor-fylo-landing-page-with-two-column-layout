@@ -476,7 +476,11 @@ footer {
 }
 .form--cta div:last-child {
   margin-top: 0.5rem;
-  width: fit-content;
+}
+@media only screen and (min-width: 55em) {
+  .form--cta div:last-child {
+    width: fit-content;
+  }
 }
 
 .email--hero, .email--cta {

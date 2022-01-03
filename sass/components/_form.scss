@@ -53,7 +53,8 @@
 
     & div:last-child {
       margin-top: 0.5rem;
-      width: fit-content;
+
+      @include respond-to-desktop { width: fit-content; }
     }
   }
 }
