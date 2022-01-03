@@ -65,7 +65,7 @@ p {
   }
 }
 
-input[type="text"],
+input[type="email"],
 input[type="submit"] {
   font-size: 0.875rem;
 
@@ -76,7 +76,7 @@ input[type="submit"] {
 
 input[type="submit"] { font-weight: 700; }
 
-input[type="text"]::-webkit-input-placeholder {
+input[type="email"]::-webkit-input-placeholder {
   font-size: 0.75rem;
 
   @include respond-to-desktop {
@@ -151,6 +151,8 @@ footer { color: var(--color-grayish-blue-transparent); }
 
   & h2 { color: var(--color-grayish-blue); }
   & p { color: var(--color-grayish-blue-transparent); }
+
+  @include respond-to-desktop { text-align: left; }
 }
 
 .link {

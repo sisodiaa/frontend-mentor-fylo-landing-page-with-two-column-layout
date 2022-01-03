@@ -162,12 +162,12 @@ p {
   }
 }
 
-input[type=text],
+input[type=email],
 input[type=submit] {
   font-size: 0.875rem;
 }
 @media only screen and (min-width: 55em) {
-  input[type=text],
+  input[type=email],
 input[type=submit] {
     font-size: 0.625rem;
   }
@@ -177,11 +177,11 @@ input[type=submit] {
   font-weight: 700;
 }
 
-input[type=text]::-webkit-input-placeholder {
+input[type=email]::-webkit-input-placeholder {
   font-size: 0.75rem;
 }
 @media only screen and (min-width: 55em) {
-  input[type=text]::-webkit-input-placeholder {
+  input[type=email]::-webkit-input-placeholder {
     font-size: 0.625rem;
   }
 }
@@ -261,6 +261,11 @@ footer {
 }
 .page__cta p {
   color: var(--color-grayish-blue-transparent);
+}
+@media only screen and (min-width: 55em) {
+  .page__cta {
+    text-align: left;
+  }
 }
 
 .link--benefit {
@@ -454,6 +459,7 @@ footer {
     flex: 3.15;
   }
   .form div:last-child {
+    align-self: flex-start;
     flex: 1.85;
   }
 }
@@ -465,6 +471,15 @@ footer {
   padding-right: 1rem;
   border-radius: 0.1rem;
   outline: none;
+}
+.form input[type=email]:invalid {
+  border: 1px solid red;
+}
+.form input[type=email]:invalid ~ .form-error {
+  display: block;
+}
+.form input[type=submit] {
+  align-self: flex-start;
 }
 .form input[type=submit]:hover {
   filter: brightness(140%);
@@ -505,6 +520,17 @@ footer {
   color: var(--color-light-gray);
   opacity: 0.5;
 }
+.email--hero:invalid, .email--cta:invalid {
+  margin-bottom: 0;
+}
+.email--hero:invalid + .form-error, .email--cta:invalid + .form-error {
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 55em) {
+  .email--hero:invalid + .form-error, .email--cta:invalid + .form-error {
+    margin-bottom: 0rem;
+  }
+}
 @media only screen and (min-width: 55em) {
   .email--hero, .email--cta {
     margin-bottom: 0rem;
@@ -526,6 +552,17 @@ footer {
 }
 .submit--cta {
   box-shadow: 0px 1px 15px -12px var(--color-dark-blue);
+}
+
+.form-error {
+  font-size: 0.5rem;
+  display: none;
+}
+.form-error--hero {
+  color: red;
+}
+.form-error--cta {
+  color: var(--color-grayish-blue-transparent);
 }
 
 .page__hero {
