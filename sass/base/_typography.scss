@@ -84,9 +84,8 @@ input[type="text"]::-webkit-input-placeholder {
   }
 }
 
-a {
-  font-size: 0.75rem;
-  color: var(--color-moderate-cyan);
+a:link,
+a:visited {
   text-decoration: none;
 }
 
@@ -152,4 +151,17 @@ footer { color: var(--color-grayish-blue-transparent); }
 
   & h2 { color: var(--color-grayish-blue); }
   & p { color: var(--color-grayish-blue-transparent); }
+}
+
+.link {
+  &--benefit {
+    font-size: 0.75rem;
+    color: var(--color-moderate-cyan);
+  }
+
+  &--footer {
+    color: currentColor;
+
+    &:hover { color: var(--color-bright-blue); }
+  }
 }

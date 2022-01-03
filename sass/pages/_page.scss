@@ -200,6 +200,12 @@
     border-radius: 50%;
     padding: 0.45rem;
     cursor: pointer;
+
+    &:hover {
+      border-color: var(--color-bright-blue);
+
+      &> .page__icon { fill: var(--color-bright-blue); }
+    }
   }
 
   &__icon {

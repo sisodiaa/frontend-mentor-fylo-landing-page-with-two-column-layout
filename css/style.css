@@ -186,9 +186,8 @@ input[type=text]::-webkit-input-placeholder {
   }
 }
 
-a {
-  font-size: 0.75rem;
-  color: var(--color-moderate-cyan);
+a:link,
+a:visited {
   text-decoration: none;
 }
 
@@ -262,6 +261,17 @@ footer {
 }
 .page__cta p {
   color: var(--color-grayish-blue-transparent);
+}
+
+.link--benefit {
+  font-size: 0.75rem;
+  color: var(--color-moderate-cyan);
+}
+.link--footer {
+  color: currentColor;
+}
+.link--footer:hover {
+  color: var(--color-bright-blue);
 }
 
 .wrapper {
@@ -455,6 +465,10 @@ footer {
   padding-right: 1rem;
   border-radius: 0.1rem;
   outline: none;
+}
+.form input[type=submit]:hover {
+  filter: brightness(140%);
+  cursor: pointer;
 }
 @media only screen and (min-width: 55em) {
   .form input {
@@ -694,6 +708,12 @@ footer {
   border-radius: 50%;
   padding: 0.45rem;
   cursor: pointer;
+}
+.page__icon-box:hover {
+  border-color: var(--color-bright-blue);
+}
+.page__icon-box:hover > .page__icon {
+  fill: var(--color-bright-blue);
 }
 .page__icon {
   display: block;

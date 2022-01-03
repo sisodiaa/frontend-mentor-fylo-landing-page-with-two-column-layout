@@ -32,6 +32,11 @@
     border-radius: 0.1rem;
     outline: none;
 
+    &[type="submit"]:hover {
+      filter: brightness(140%);
+      cursor: pointer;
+    }
+
     @include respond-to-desktop {
       padding-top: 0.3rem;
       padding-bottom: 0.3rem;
